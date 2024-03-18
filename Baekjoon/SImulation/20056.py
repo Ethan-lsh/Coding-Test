@@ -40,8 +40,8 @@ for _ in range(K):
 
         board[nr][nc].append([cm, cs, cd])
 
-    # 격자를 순회한다.
-    # NOTE: 파이어볼이 이동한 좌표만을 따로 탐색하는건 비효율적임 
+    # 격자를 순회하면서, 파이어볼이 있는 곳을 찾는다.
+    # NOTE: 파이어볼이 이동한 좌표만을 따로 탐색하는건 비효율적임
     for r in range(N):
         for c in range(N):
             if len(board[r][c]) > 1:
